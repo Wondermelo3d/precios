@@ -1,3 +1,7 @@
+body {
+    background-image: linear-gradient(to bottom right, #EC008C, #FC6767);
+}
+
 .container-fluid .img-fluid {
     width: 40%;
     margin: 10px;
