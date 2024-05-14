@@ -1,0 +1,28 @@
+.container-fluid .img-fluid {
+    width: 40%;
+    margin: 10px;
+}
+
+.container-fluid .price {
+    margin-top: 1%;
+    margin-bottom: 10%;
+    margin-left: 42.5%;
+    margin-right: 42.5%;
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+}
+
+@media (max-width: 767.98px) {
+    .container-fluid .img-fluid {
+        width: 70%;
+    }
+
+    .container-fluid .price {
+        font-size: 1rem;
+        margin-bottom: 12%;
+        margin-left: 26%;
+        margin-right: 26%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+}
