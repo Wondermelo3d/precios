@@ -3,15 +3,24 @@ body {
 }
 
 .container-fluid .img-fluid {
-    width: 40%;
+    width: 70%;
     margin: 10px;
+}
+
+#image {
+    padding-bottom: 0.1%;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    transition: transform 0.3s ease;
 }
 
 .container-fluid .price {
     margin-top: 1%;
     margin-bottom: 10%;
-    margin-left: 42.5%;
-    margin-right: 42.5%;
+    margin-left: 32.5%;
+    margin-right: 32.5%;
+    margin-bottom: 3.25%;
     padding-top: 0.25%;
     padding-bottom: 0.25%;
 }
@@ -26,7 +35,19 @@ body {
         margin-bottom: 12%;
         margin-left: 26%;
         margin-right: 26%;
+        margin-bottom: 5%;
         padding-top: 1%;
         padding-bottom: 1%;
     }
+
+    #image {
+        padding-bottom: 0.1%;
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-bottom: 10%;
+    }
+}
+
+#image:hover {
+    transform: scale(1.1);
 }

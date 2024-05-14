@@ -45,22 +45,27 @@ function loadImages() {
 
             for (var i = 1; i < 85; i++) {
                 const container = document.createElement('div');
-                container.id = 'img' + i;
+                container.id = 'image';
+                container.className = 'rounded-5 bg-white bg-opacity-50';
                 gallery.appendChild(container);
 
                 const subcontainer = document.createElement('div');
-                subcontainer.className = ' d-flex justify-content-center align-items-center';
+                subcontainer.className = 'd-flex justify-content-center align-items-center';
                 container.appendChild(subcontainer);
 
                 const img = document.createElement('img');
-                img.className = 'img-fluid rounded-3';
+                img.className = 'img-fluid rounded-3 mt-4';
                 img.src = 'images/' + i + ((i == 62 || i == 65) ? '.png' : '.jpg');
                 subcontainer.appendChild(img);
 
                 const div = document.createElement('div');
-                div.className = 'price fw-bold fs-4 d-flex justify-content-center align-items-center border border-info rounded-5';
-                div.textContent = 'Precio: ' + prices[i-1] + '€';
+                div.className = 'price fw-bold fs-4 d-flex justify-content-center align-items-center border border-info rounded-5 bg-white bg-opacity-50';
+                div.textContent = 'Precio: ' + prices[i - 1] + '€';
                 container.appendChild(div);
+
+                const margin = document.createElement('a');
+                margin.className = 'mb-4';
+                container.appendChild(margin);
             }
         })
         .catch((e) => console.error(e));
